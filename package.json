@@ -1,12 +1,36 @@
 {
   "name": "nanolink",
-  "version": "1.0.0",
-  "private": true,
-  "main": "api/index.ts",
+  "version": "0.0.1",
+  "description": "A Typescript package for hosting a link shortener",
+  "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node index.ts",
+    "dev": "nodemon index.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://realtable@github.com/realtable/nanolink.git"
+  },
+  "keywords": [
+    "typescript",
+    "shortener",
+    "express",
+    "server"
+  ],
+  "author": "Josh Quail <josh@madbean.com> (https://github.com/realtable/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/realtable/nanolink/issues"
+  },
+  "homepage": "https://github.com/realtable/nanolink#readme",
   "dependencies": {
-    "@now/node": "1.0.1"
+    "@types/express": "^4.17.1",
+    "express": "^4.17.1",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
   }
 }

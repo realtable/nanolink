@@ -1,9 +1,0 @@
-{
-  "version": 2,
-  "name": "nanolink",
-  "routes": [
-    { "src": "^/create/(.*)", "dest": "/api/?create=$1" },
-    { "src": "^/(.+)", "dest": "/api/?resolve=$1" },
-    { "src": "^/", "dest": "/api/" }
-  ]
-}

@@ -1,11 +1,14 @@
 # nanolink
 
-![https://github.com/realtable/arroyo/issues](https://img.shields.io/github/issues/realtable/arroyo.svg?style=flat)
-![https://arroyo.now.sh](https://img.shields.io/website-up-down-brightgreen-red/https/arroyo.now.sh.svg?style=flat)
+![https://github.com/realtable/nanolink/issues](https://img.shields.io/github/issues/realtable/nanolink.svg?style=flat)
+![https://www.npmjs.com/package/nanolink](https://img.shields.io/npm/v/nanolink.svg)
 
-`nanolink` *(W.I.P.)* is a Typescript web API that shortens links to the form
-`placeholder` when given a POST request in the form `placeholder`.
+`nanolink` *(W.I.P.)* is a Typescript app that runs a link shortener on your
+network. You can create new links by querying `https://localhost:3000/create/URL`.
 
-| home   | https://github.com/realtable/nanolink |
-|:------ |:------------------------------------- |
-| site   | https://nlink.now.sh                  |
+| home | https://github.com/realtable/nanolink  |
+|:---- |:-------------------------------------- |
+| npm  | https://www.npmjs.com/package/nanolink |
+
+    $ npm i nanolink
+    $ npm start
