@@ -1,6 +1,6 @@
 {
   "name": "nanolink",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Typescript package for hosting a link shortener",
   "main": "index.ts",
   "scripts": {
