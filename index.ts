@@ -38,7 +38,7 @@ app.get('/:id', (req, res) => {
 
 app.get('/', (req, res) => {
   let url = `${req.protocol}://${req.get('host')}`
-  let message = `*** nanolink ***\nQuery ${url}/myURL to create a new link.\nIf you find a bug, please report it at https://github.com/realtable/nanolink/issues.`
+  let message = `*** nanolink ***\nQuery ${url}/create/myURL to create a new link.\nIf you find a bug, please report it at https://github.com/realtable/nanolink/issues.`
   reply(200, message, res)
 })
 
