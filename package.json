@@ -1,13 +1,14 @@
 {
   "name": "nanolink",
-  "version": "1.0.1",
-  "description": "A Typescript package for hosting a link shortener",
-  "main": "index.ts",
+  "version": "1.1.0",
+  "description": "A Typescript link shortening API on your local network",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts",
-    "dev": "nodemon index.ts"
+    "dev": "nodemon src/index.ts",
+    "build": "babel src --out-dir lib --extensions \".ts,.tsx\""
   },
+  "bin": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://realtable@github.com/realtable/nanolink.git"
@@ -26,11 +27,18 @@
   "homepage": "https://github.com/realtable/nanolink#readme",
   "dependencies": {
     "@types/express": "^4.17.1",
-    "express": "^4.17.1",
-    "ts-node": "^8.4.1",
-    "typescript": "^3.6.4"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^1.19.3"
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-numeric-separator": "^7.2.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "nodemon": "^1.19.3",
+    "source-map-loader": "^0.2.4",
+    "typescript": "^3.6.4"
   }
 }

@@ -4,11 +4,13 @@
 ![https://www.npmjs.com/package/nanolink](https://img.shields.io/npm/v/nanolink.svg)
 
 `nanolink` is a Typescript app that runs a link shortener on your
-network. You can create new links by querying `https://localhost:3000/create/URL`.
+network. You can create new links by querying `https://localhost:3000/create/myURL`.
 
 | home | https://github.com/realtable/nanolink  |
 |:---- |:-------------------------------------- |
 | npm  | https://www.npmjs.com/package/nanolink |
 
-    $ npm i nanolink
-    $ npm start
+```bash
+npm i nanolink # if you want to save links
+npx nanolink
+```
