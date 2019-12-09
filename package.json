@@ -1,6 +1,6 @@
 {
   "name": "nanolink",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A Typescript link shortening API on your local network",
   "main": "dist/bundle.js",
   "scripts": {
